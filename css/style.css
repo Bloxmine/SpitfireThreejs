@@ -1,0 +1,14 @@
+:root {
+    --color-background: #001b2b;
+    --color-primary: #f7f7f7;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;   
+}
