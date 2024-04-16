@@ -1,9 +1,9 @@
 // Author: Hein Dijstelbloem
 // Description: Spitfire 3D model flying in place, with clouds flying past it. Able to be observed from all angles.
 
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import * as THREE from '../three.module.js';
+import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -52,7 +52,7 @@ const textureRepeatFactor = 3;
 groundTexture.repeat.set(textureRepeatFactor, textureRepeatFactor);
 
 const groundPlane = new THREE.Mesh(
-    new THREE.PlaneGeometry(300, 300),
+    new THREE.PlaneGeometry(400, 400),
     new THREE.MeshToonMaterial({ map: groundTexture })
 );
 
